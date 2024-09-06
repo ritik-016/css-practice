@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+        ul li{
+            list-style: none;
+        }
+        .logo{
+            height: 30px;
+            width: 30px;
+            background-color: black;
+        }
+
+
+        .container{
+            height: 70vh;
+            width: 70vw;
+            background-color: green;
+            position: relative;
+        }
+        .box{
+            height: 90px;
+            width: 90px;
+            background-color: blueviolet;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-radius: 50%;
+            animation: translateX 3s linear  infinite , translateY 1s ease-out infinite alternate;
+        }
+        @keyframes translateX {
+            from{
+                left: 0;
+                background-color: blueviolet;
+            }
+            to{
+                left: 70%;
+                background-color: rgb(190, 170, 209);
+            }
+        }
+        @keyframes translateY {
+            from{
+               bottom: 0; 
+               background-color: blueviolet;
+            }
+            to{
+                bottom: 70%;
+                background-color: rgb(190, 170, 209);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo"></div>
+                <li>Home</li>
+                <li>Services</li>
+                <li>About us</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>

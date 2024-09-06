@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS selector</title>
+    <style>
+      /* Element selector */
+      div {
+        /* color: red; */
+        /* background-color: yellow; */
+      }
+      /* class selector */
+      .red {
+        background-color: red;
+      }
+      /* id selector */
+      #green {
+        background-color: green;
+      }
+      /* child selector */
+      div > p {
+        background-color: brown;
+      }
+      /* desendant selector */
+      div p {
+        background-color: aqua;
+      }
+      /* universal selector */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* pseudo selector */
+      a:visited {
+        color: pink;
+      }
+      a:link {
+        color: magenta;
+      }
+      a:active {
+        background-color: black;
+      }
+      a:hover {
+        background-color: blue;
+      }
+      p:first-child {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="one">
+      <p>I am first</p>
+      <p>I am second</p>
+    </main>
+    <div class="red">
+      I am Iron man
+      <span>
+        <p>I am spidey</p>
+      </span>
+    </div>
+    <div id="green">I am the destroyer</div>
+    <a href="https://www.google.com">Open Google</a>
+    <a href="https://www.facebook.com">Open Facebook</a>
+  </body>
+</html>
